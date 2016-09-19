@@ -1,0 +1,7 @@
+<h4>Singers Name : </h4>
+{% for singer in singers %}
+<ul>
+<li><a href="{% url 'details' singer.id %}">{{singer.singer_name}}</a></li>
+</ul>
+
+{% endfor %}

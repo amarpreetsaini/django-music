@@ -1,0 +1,10 @@
+<h4>Albums</h4>
+
+{% for album in singer_Albums %}
+<ul>
+<li><a href="{% url 'albums' album.id %}">{{ album.album_name}}</a></li>
+</ul>
+
+
+
+{% endfor %}

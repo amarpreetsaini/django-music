@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: django-music
+Version: 0.1
+Summary: A simple Django app to conduct Web-based polls.
+Home-page: UNKNOWN
+Author: Amarpreet Singh
+Author-email: amarpreetsaini@live.com
+License: BSD License
+Description: =====
+        Music
+        =====
+        
+        Music is a simple Django app to create music website. We can add 
+        singers, songs and albums. 
+        
+        Detailed documentation is in the "docs" directory.
+        
+        Quick start
+        -----------
+        
+        1. Add "music" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'music',
+            ]
+        
+        2. Include the polls URLconf in your project urls.py like this::
+        
+            url(r'^music/', include('music.urls')),
+        
+        3. Run `python manage.py migrate` to create the polls models.
+        
+        4. Start the development server and visit http://127.0.0.1:8000/admin/
+           to start adding singer,songs and albums  (you'll need the Admin app enabled).
+        
+        5. Visit http://127.0.0.1:8000/music/ to start using music app.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 1.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content

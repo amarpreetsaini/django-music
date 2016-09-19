@@ -1,0 +1,9 @@
+<h4>Songs</h4>
+{% for song in all_Songs %}
+
+<ul><li>{{song.song_name}} [{% for singer in song.singers.all %}
+{{singer.singer_name}}
+{% endfor %}
+] added on {{song.added_time|date}} </li>
+</ul>
+{% endfor %}
